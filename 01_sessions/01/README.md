@@ -20,9 +20,9 @@ With this session, you will
 
 ## Scripts
 
-* [Introduction](../02_scripts/itc_ws2021_01_intro_script.md)
-* [Setup](../02_scripts/itc_ws2021_02_setup_script.md)
-* [Drawing](../02_scripts/itc_ws2021_02_drawing_script.md)
+* [Introduction](../../02_scripts/itc_ws2021_01_intro_script.md)
+* [Setup](../../02_scripts/itc_ws2021_02_setup_script.md)
+* [Drawing](../../02_scripts/itc_ws2021_02_drawing_script.md)
 
 ## Setup
 
