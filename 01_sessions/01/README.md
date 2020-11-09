@@ -38,4 +38,4 @@ With this session, you will
 
 3. Draw a creative self-portrait with simple shapes.
 
-Submit your sketches under `Assignment 01 - Drawing` in the OpenProcessing class.
+Submit your sketches under `Assignment 01 - Drawing` in the OpenProcessing [class](https://www.openprocessing.org/class/64768).
