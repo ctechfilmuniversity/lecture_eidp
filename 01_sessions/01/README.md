@@ -27,7 +27,7 @@ With this session, you will
 ## Setup
 
 1. Create a account with [OpenProcessing](https://www.openprocessing.org)
-2. Sign up to the [class](https://www.openprocessing.org/class/64768)(Code: 296C39)
+2. Sign up to the [class](https://www.openprocessing.org/class/64768) (Code: 296C39)
 
 ## Assignment
 
