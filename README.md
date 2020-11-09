@@ -89,7 +89,7 @@ We will use two environments in this course: one where you can read the sessions
 
 [OpenProcessing](https://www.openprocessing.org/)
 
-* [Follow this link to the class.](https://www.openprocessing.org/class/64768)(Code: 296C39).
+* [Follow this link to the class](https://www.openprocessing.org/class/64768) (Code: 296C39).
     * You must create an account and sign up to the class.
 * Here we do all the coding and exchange practical exercises.
 
