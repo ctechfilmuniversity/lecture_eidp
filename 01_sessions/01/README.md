@@ -18,6 +18,10 @@ With this session, you will
 * understand commands, and
 * be able to draw stuff.
 
+## Video
+
+[Here](https://drive.google.com/file/d/1eu1aaDmP6L_DuVhRwsY786-4ZxnnQ1x5/view?usp=sharing) you find the recoding of the first session. The recording is only for members of this course. You are not allowed to share it.
+
 ## Scripts
 
 * [Introduction](../../02_scripts/itc_ws2021_01_intro_script.md)
