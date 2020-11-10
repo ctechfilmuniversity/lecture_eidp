@@ -93,6 +93,8 @@ We will use two environments in this course: one where you can read the sessions
     * You must create an account and sign up to the class.
 * Here we do all the coding and exchange practical exercises.
 
+All materials are meant for members of this course only. You are not allwed to share or copy the material in any way.
+
 ## Deadlines
 
 It is indicated for each session when the assignment is due. The deadline for the final project is March, 15th.
