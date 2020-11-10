@@ -37,6 +37,8 @@ With this session, you will
 
 ## Assignment
 
+The assignmet is due November 16, 23:59 :)
+
 1. Draw the following house by combining shapes. 
 2. Draw the same house with beginShape and endShape. 
 
