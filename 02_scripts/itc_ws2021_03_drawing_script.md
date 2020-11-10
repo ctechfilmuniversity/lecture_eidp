@@ -248,6 +248,8 @@ Arguments:
 
 #### Arc 🤓
 
+Drawing arcs is an example for needing a tiny bit of mathematical understanding.
+
 ```js
 arc(x, y, width, height, alpha, beta);
 ```
@@ -264,46 +266,43 @@ Arguments:
 
 ![ch01_21](img/03/ch01_21.png)
 
+Angles are measured in reference to a line starting at the center, running to the right, clock-wise.
+
+![ch01_23](img/03/ch01_23.png)
+
+![ch01_25](img/03/ch01_25.png)
+
+
+![ch01_24](img/03/ch01_24.png)
+
+
+
 
 ##### Degrees vs. Radians 🤓
 
+Radians are alternate units used to measure angles. Just as it sounds, a radian is based on the radius of a circle. One radian (abbreviated rad) is the angle created by bending the radius length around the arc of a circle. Because a radian is based on an actual part of the circle rather than an arbitrary division, it is a much more natural unit of angle measure and often used for creating graphics. [[2]](https://www.ck12.org/book/CK-12-Trigonometry-Concepts/section/2.1)
+
+
 ![ch01_22](img/03/ch01_22.png)
 
-[[2]](https://www.ck12.org/book/CK-12-Trigonometry-Concepts/section/2.1)
-
-<!-- 
-Radians are alternate units used to measure angles in trigonometry. Just as it sounds, a radian is based on the radius of a circle. One radian (abbreviated rad) is the angle created by bending the radius length around the arc of a circle. Because a radian is based on an actual part of the circle rather than an arbitrary division, it is a much more natural unit of angle measure for upper level mathematics.
-
-arc length / radius
-
- -->
+You don't really have to understand what radians are. You just need to know how to use command with radians.
 
 
 ##### Examples
+
+Radians are often expressed in relationship to [`PI`](https://en.wikipedia.org/wiki/Pi) (which is the very special number 3.14159265359...). `360°` are `2PI`, hence, e.g., `30°` are `PI/6`.
 
 ```js
 arc(4, 5, 5, 7, PI/6, 2*PI - PI/6);
 ```
 
-* Function `radians()` converts degrees in radians for you
+p5 is so nice and provides you with the function `radians()`, which converts degrees in radians for you:
 
 ```js
 arc(4, 5, 5, 7, radians(30), radians(330));
 ```
 
-##### Examples
 
-```js
-arc(x, y, width, height, alpha, beta);
-```
-
-Angles are measured in reference to a line starting at the center, running to the right, clock-wise.
-
-![ch01_23](img/03/ch01_23.png)
-
-![ch01_24](img/03/ch01_24.png)
-
-![ch01_25](img/03/ch01_25.png)
 
 [[1]](http://michaelkipp.de/processing/01%20zeichnen.html)
 
