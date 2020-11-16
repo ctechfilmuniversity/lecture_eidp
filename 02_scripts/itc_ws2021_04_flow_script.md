@@ -639,7 +639,7 @@ function keyPressed() {
     * `if(condition is true)`
     * `while(condition is true)`
 
-Use the [reference](https://p5js.org/reference/) 🚑!
+Use the [reference](https://p5js.org/reference/) 🚒
 
 
 
@@ -647,4 +647,4 @@ Use the [reference](https://p5js.org/reference/) 🚑!
 
 The End  
   
-⛵️  ❌  🎡 
+⛵️  🎢  🎡 
