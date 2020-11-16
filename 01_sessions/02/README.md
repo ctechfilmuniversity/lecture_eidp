@@ -29,7 +29,7 @@ Specifically you
 
 ### 02.01 Key Input 
 
-Take the code example `02.06 Color Circle Clearing - Step 4` from the lecture as basis. Replace the setting of random colors with setting random red colors when the key 'r' is pressed, random green colors for 'g' and random blue colors for 'b'.
+Take the code example [`02.06 Color Circle Clearing - Step 4`](https://www.openprocessing.org/sketch/1018332) from the lecture as basis. Replace the setting of random colors with setting random red colors when the key 'r' is pressed, random green colors for 'g' and random blue colors for 'b'.
 
 ### 02.02 Mouse Movement *Speed*
 
