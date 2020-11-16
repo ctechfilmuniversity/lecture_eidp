@@ -22,7 +22,7 @@ Specifically you
 
 ## Script
 
-* [Program Flow](../../02_scripts/itc_ws2021_04_flow_script.md)
+* [Script 02 - Program Flow](../../02_scripts/itc_ws2021_04_flow_script.md)
 
 
 ## Assignment
