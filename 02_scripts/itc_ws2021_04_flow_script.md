@@ -82,7 +82,9 @@ function draw() {
 }
 ```
 
-But when are we actually calling these commands? Well, p5 takes care of calling these commands for us. But we need to define what happens when the commands are called, hence, we need to define their **functionality**.
+By filling these functions with code, we are defining what happens when the commands are called, hence, we define their **functionality**.
+
+But when are we actually calling these commands? Well, in this specific case p5 takes care of calling these commands for us. 
 
 ## Functions
 
@@ -90,7 +92,7 @@ Functions define functionality blocks with fixed responsibilities or tasks. Work
 
 ### Function Definition
 
-To define a function you need the keyword `function` followed by a `functionname` of your choice, followed by `()`, followed by `{...}`. What a function does is enclosed in the curly brackets.
+To define a function you need the keyword `function` followed by a `functionname` (given or of your choice), followed by `()`, followed by `{...}`. What a function does is enclosed in the curly brackets.
 
 ```js
 function functionname(){
