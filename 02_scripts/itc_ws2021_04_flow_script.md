@@ -42,7 +42,6 @@ Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de | Film University Babelsb
     * Functions
     * User interaction
     * `if`-condition
-    * `while`-condition
 
 
 ## Learning Objectives
@@ -53,7 +52,7 @@ Specifically you
 * understand what a function definition and a function call are,
 * understand the difference between a command and a code block,
 * know how to implement user mouse and key inputs,
-* know how to implement if, if..else, and while conditional statements, and
+* know how to implement if, and if..else, and
 * with that understand how you can control the flow of a program.
 
 ## Program Flow
@@ -554,81 +553,6 @@ else
 [[quora]]([https://www.quora.com/Can-if-else-be-considered-as-a-loop])
 
 
-## `while`-Loop
-
-The while loop is closely related to the if-statement. However, the if-statement block is only executed once, if the condition is true. For a while-statement, its code block is executed as long as a condition is true.
-
-```
-// Pseudo code
-
-while (condition)
-{  
-    statement;
-}
-```
-
-You have to make sure that the condition becomes `false` at some point!!
-
-Otherwise you have created an **infinity loop** 🤬
-
-
-```js
-// 02.07 While Loop
-
-let counter = 0;    // Iteration counter                    
-while (counter < 3) // Loop condition
-{  
-    print(“wow”);     // Loop activity
-
-    counter += 1;       // Increase counter
-}
-print(“All done…”);
-```
-
-![ch02_04](img/04/ch02_04.png)
-[michaelkipp](http://michaelkipp.de/processing/07%20schleifen.html)
-
-
-```js
-// 02.08 Loop Inside Draw
-
-
-function setup() {
-    createCanvas(400, 400);
-    background(255);
-    fill(255, 0, 0);
-    noStroke();
-}
-
-
-function draw() {
-
-    let counter = 0; // Iteration counter
-    while (counter < 30) // Loop condition
-    {
-        ellipse(mouseX + random(30), mouseY + random(30), 2, 2);
-        counter += 1; // Increase counter
-    }
-}
-
-
-function mousePressed() {
-
-    fill(random(255), random(255), random(255));
-}
-
-
-function keyPressed() {
-
-    if (key == 'c') {
-        background(255);
-    } else {
-        fill(random(255), random(255), random(255));
-    }
-}
-```
-
-
 
 ## Summary
 
@@ -639,7 +563,7 @@ function keyPressed() {
     * `mouseX`, `mouseY`
 * Structuring the program flow
     * `if(condition is true)`
-    * `while(condition is true)`
+
 
 Use the [reference](https://p5js.org/reference/) 🚒
 
