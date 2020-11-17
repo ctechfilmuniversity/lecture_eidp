@@ -20,6 +20,11 @@ Specifically you
 * know how to implement if, if..else, and while conditional statements, and
 * with that understand how you can control the flow of a program.
 
+
+## Video
+
+[Here](https://drive.google.com/file/d/1yeQtby58-rU_1AK3gewkxiOb-VNToMHj/view?usp=sharing) you find the recoding of the session. The recording is only for members of this course. You are not allowed to share it.
+
 ## Script
 
 * [Script 02 - Program Flow](../../02_scripts/itc_ws2021_04_flow_script.md)
