@@ -44,7 +44,7 @@ Think about speed for a second: how can we compute the *speed* of the movement?
 
 ...
  
-Yes, a rough computation of speed could be equal to the *distance* between the current mouse position and the previous mouse position. Hence, the larger the distance, the quicker the mouse was moved between frames. You can compute the distance between two points, e.g., `p1` and `p2` by computing the difference between the coordinates x and y and adding these. Hence, `speed = distance between p1 and p2 = (x1 - x2) + (y1 - y2)`. 
+Yes, a rough computation of speed could be equal to the *distance* between the current mouse position and the previous mouse position. Hence, the larger the distance, the quicker the mouse was moved between frames. You can compute the distance between two points, e.g., `p1` and `p2` by computing the difference between their x and y coordinates and adding these. Hence, `speed = distance between p1 and p2 = (x1 - x2) + (y1 - y2)`. 
 
 Next to `mouseX` and `mouseY`, use the system variables [`pmouseX`](https://p5js.org/reference/#/p5/pmouseX) and [`pmouseY`](https://p5js.org/reference/#/p5/pmouseY), which give the mouse position in the previous `draw()` call.
 
