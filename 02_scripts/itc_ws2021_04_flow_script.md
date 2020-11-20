@@ -27,7 +27,6 @@ Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de | Film University Babelsb
     * [The == operator](#the--operator)
         * [Problem 2 - Clear the Screen](#problem-2---clear-the-screen)
     * [The `else` Statement](#the-else-statement)
-    * [`while`-Loop](#while-loop)
     * [Summary](#summary)
 
 ---
