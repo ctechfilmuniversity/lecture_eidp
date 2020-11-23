@@ -399,7 +399,7 @@ Idea: Pressing the key ‘c' should clear the screen.
 
 *If… do something.*
 
-This is called a **condition**. It structures the flow of a program.
+This is called a **conditional** statement. It structures the flow of a program.
 
 ![ch02_02](img/04/ch02_02.png)
 
