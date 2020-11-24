@@ -56,6 +56,10 @@ The steps to animate the position of the circle are similar to the steps we made
     * Assign a random value within a suitable range to `stepX`, `stepY` each.
 2. For a more precise boundary check, check the "collisions" with the sketch window limits not with the center of the circle, as it is now, but incorporate the radius of the circle into the check. Then the circle will bounce off its sides and not slightly move out of the window anymore.
 
+### 03.03 Freestyle
+
+What else could you animate in this basic example?
+
 ---
 
 Submit your sketches under `Assignment 03 - Animation` in the OpenProcessing [class](https://www.openprocessing.org/class/64768).
