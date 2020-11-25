@@ -36,9 +36,6 @@ Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de | Film University Babelsb
             * [Arithmetic Operators](#arithmetic-operators)
             * [Logical Operators](#logical-operators)
     * [Nicer Colors](#nicer-colors)
-        * [Color Systems](#color-systems)
-            * [RGB](#rgb)
-            * [HSB](#hsb)
     * [Summary](#summary-1)
     * [References](#references)
 
@@ -535,8 +532,13 @@ Global scope comes with many problems, e.g., it is difficult to keep track where
 Problem 1: Change the color of the circle  ✔️  
 Problem 2: Automatically (✔️)
 
+We already know how to change the color automatically in each frame. 
+
+This is a nice first try but how do we create a smooth change of color?
+
 ```js
-// 03.05 - Animating the Color of the Circle
+// https://www.openprocessing.org/sketch/1024171 - Step 2
+// 03.05 - Animating the Color of the Circle - Step 02
 
 function setup() {
     createCanvas(250, 250); 
@@ -548,19 +550,35 @@ function setup() {
 
 function draw() {
 
+    // For each draw() call,
+    // we set the fill color to 
+    // a new random color
     fill(random(255), 0, 0);
     ellipse(mouseX, mouseY, 20, 20);
+}
+
+
+function keyPressed() {
+    if(key == 'c') {
+        background(255);
+    }
 }
 
 ```
 
 ### Refinement: Smoothly Change the Color of the Circle Automatically
 
-Idea: count up a variable for the color channel.
+Idea: in each frame (meaning every time draw is called) count up a variable and use that variable for one color channel. Hence, the color should change smoothly by increasing its value one by one.
+
+... but wait. Why does the color stop changing?
 
 ```js
-// 03.05 - Animating the Color of the Circle
+// https://www.openprocessing.org/sketch/1024171 - Step 03
+// 03.05 - Animating the Color of the Circle - Step 03
 
+
+// Creation and initialization
+// of a new variable
 let colorRed = 0;
 
 function setup() {
@@ -573,20 +591,34 @@ function setup() {
 
 function draw() {
 
+    // Using the colorRed variable
+    // as value for the red channel
     fill(colorRed, 0, 0);
     ellipse(mouseX, mouseY, 20, 20);
 
+    // Increasing the value
+    // in each draw() call
     colorRed = colorRed + 1;
+    // print(colorRed);
 }
 
+
+function keyPressed() {
+    if(key == 'c') {
+        background(255);
+    }
+}
 ```
 
 ### Why Does the Color Stop Changing?
 
-We need to check for the value limits of the `colorRed` variable.
+We continuously increase the value for the `colorRed` variable and at some point its value is above 255. But there are only up 255 color values in the r,b,g system for one channel. Hence, every value above 255 will just clamped to 255. So when, e.g. `colorRed` is 500, the color looks like 255.
+
+In order to change this "overflow", we need to check for the possible value range of a color and make sure that colorRed only gets values 0..255.
 
 ```js
-// 03.05 - Animating the Color of the Circle
+// https://www.openprocessing.org/sketch/1024171
+// 03.05 - Animating the Color of the Circle - Step 04
 
 let colorRed = 0;
 
@@ -605,21 +637,39 @@ function draw() {
 
     colorRed = colorRed + 1;
     // print(colorRed);
+
+    // We check whether the value of
+    // colorRed becomes larger than 255,
+    // and if so we reset it back to zero.
     if(colorRed > 255){
         colorRed = 0;
     }
 }
 
+// Called if a key was 
+// pressed
+function keyPressed() {
+    if(key == 'c') {
+        background(255);
+    }
+}
 ```
 
 ### How Can We Have the Color Loop Back And Forth?
 
+For making the color change loop, we want first that the color is increased by one (`colorRed = colorRed + 1;`) when it starts at zero, until it is at 255. When it reached 255, we want to "switch direction" and decrease the `colorRed` value (`colorRed = colorRed + 1;`) until it reached zero. Once it reached zero, we want to switch direction again and count up again, and so on and so on.
+
 For that we can utilize a new `step` variable, which controls if we add or subtract one from our `colorRed` variable.
 
+
 ```js
-// 03.05 - Animating the Color of the Circle
+// https://www.openprocessing.org/sketch/1024171
+// 03.05 - Animating the Color of the Circle - Step 05
 
 let colorRed = 0;
+
+// New variable to add as
+// step to colorRed
 let step = 1;
 
 function setup() {
@@ -635,22 +685,67 @@ function draw() {
     fill(colorRed, 0, 0);
     ellipse(mouseX, mouseY, 20, 20);
 
+    // Adding the step variable
+    // to colorRed instead of simply adding 1
     colorRed = colorRed + step;
-    print(colorRed);
-    if(colorRed > 255){
+    //print(colorRed);
 
+    if(colorRed > 255){
         step = step * -1;
     }
 }
-
 ```
 
-But wait, what is going on? We also have to check for the value to become smaller zero.
-
-For that we are using the `or` operator with `||`, which connects two conditions.
+Further explanation:
 
 ```js
-// 03.05 - Animating the Color of the Circle
+// Pseudo Code
+
+let colorRed = 0;
+let step = 1;
+
+...
+
+colorRed = colorRed + step;
+
+// This means as long as step is 1, we count colorRed up:
+// 1 = 0 + 1 
+// 2 = 1 + 1
+// 3 = 2 + 1
+// 4 = 3 + 1
+// ...
+
+// When colorRed becomes larger than 255 we 
+// multiply step by -1 so that step becomes equal -1
+
+if(colorRed > 255){
+    step = step * -1;
+}
+
+// -1 = 1 * -1 -> step is now -1
+
+// Now when we count up colorRed, we are actually doing a subtraction!
+
+colorRed = colorRed + step;
+
+// This means as long as step is -1, we count colorRed DOWN:
+// 254 = 255 + (-1)  = 255 -1
+// 253 = 254 + (-1)
+// 252 = 253 + (-1)
+// ...
+```
+
+
+
+But wait, what is going on, why does it remain black after a while? 
+
+We also have to check for the value to become smaller zero.
+
+For that we are using the `or` operator with `||`, which connects two conditions. This means one of the two conditions (condition 1 is `colorRed > 255` and condition 2 is `colorRed < 0`) needs to be true for the whole statement `condition 1 or condition 2` to be true.
+
+```js
+// https://www.openprocessing.org/sketch/1024171
+// 03.05 - Animating the Color of the Circle - Step 06
 
 let colorRed = 0;
 let step = 1;
@@ -671,13 +766,20 @@ function draw() {
     colorRed = colorRed + step;
     // print(colorRed);
 
+    // We will execute the if code block if ether colorRed > 255
+    // or colorRed < 255
     if(colorRed > 255 || colorRed < 0){
 
         step = step * -1;
     }
 }
-
 ```
+
+
+Done 🥳
+
+Now, we have a nicely looping color change.
+
 
 
 ## Operators
@@ -690,6 +792,17 @@ if(key == 'c')
     background(255);
 }
 ```
+
+end just now with the or operator `||`:
+
+```js
+if(colorRed > 255 || colorRed < 0){
+
+        step = step * -1;
+    }
+```
+
+In the following now an overview of all possible operators.
 
 ### Comparison Operators
 
@@ -747,6 +860,7 @@ let num = 10;
 
 num +=20; //now num is 30
 num *=2
+```
 
 ```js
 let num = 10;
@@ -778,7 +892,8 @@ if(colorRed > 255 || colorRed < 0)
 
 How can we iterate through the whole color spectrum?
 
-```js
+<!-- `
+``js
 // 03.06 - The Color Spectrum
 // https://www.openprocessing.org/sketch/1024185
 
@@ -809,10 +924,11 @@ function draw() {
 
         step = step * -1;
     }
-}
+} 
 ```
+-->
 
-The r, g, b color system is notoriously difficult to control visually. Thankfully, there are several **color systems** which are easier to work with.
+The r, g, b color system is notoriously difficult to control visually. Thankfully, there are several **color systems** which are easier for humans to work with. p5 offers RGB and HSB.
 
 ### Color Systems
 
@@ -876,11 +992,11 @@ colorMode(HSB);
 
 That command should be placed before all other commands working with color, such as `background()` and `fill()`.  
 
-Now we can animate the HSB hue channel instead of the RGB red channel.
+By using the HSB color system instead of RGB, we can iterate through the hue channel and with that we only change the color. We keep the brightness and saturation as it. Hence, we are getting nicer, fully bright and saturated colors.
 
 ```js
-// 03.05 - Animating the Color of the Circle
 // https://www.openprocessing.org/sketch/1024185
+// 03.06 - The Color Spectrum - Step 2
 
 let hue = 0;
 let step = 1;
@@ -889,9 +1005,12 @@ function setup() {
     createCanvas(500, 500);
 
     // Setting the color mode
-    // to hsb
+    // to HSB
     colorMode(HSB);
 
+    // Then we also need to
+    // adjust the background values
+    // to the hsb system
     background(0, 0, 100);
     noStroke();
 }
@@ -903,13 +1022,71 @@ function draw() {
 
     hue = hue + step;
 
-    // The hue spectrum has the same color
-    // at both ends (0, and 360)
-    if (hue > 360) {
+    if (hue > 360 || hue < 0) {
 
         step = step * -1;
     }
 
+}
+
+// Called if a key was 
+// pressed
+function keyPressed() {
+    if (key == 'c') {
+        background(255);
+    }
+}
+```
+
+*On a side note:*  
+
+Another benefit of the hue channel is that the hue spectrum has at both ends the same color (0 = 359 = red). This means we could also just jump from 359 back to 0 and get rid of the step variable all together while still having a smooth transition. The simpler code is, the better!
+
+```js
+// https://www.openprocessing.org/sketch/1024185
+// 03.06 - The Color Spectrum - Step 3
+
+let hue = 0;
+
+function setup() {
+	createCanvas(500, 500);
+	
+	// Setting the color mode
+	// to HSB
+	colorMode(HSB);
+
+	// Then we also need to
+	// adjust the background values
+	// to the hsb system
+	background(0, 0, 100);
+	noStroke();
+}
+
+function draw() {
+
+	fill(hue, 100, 100);
+	ellipse(mouseX, mouseY, 100, 100);
+
+	// Short version
+	// of hue = hue + 1;
+	hue++;
+
+	// Setting hue from 360
+	// back to 0, which is the
+	// same color
+	if (hue > 359) {
+
+		hue = 0;
+	}
+
+}
+
+// Called if a key was 
+// pressed
+function keyPressed() {
+	if (key == 'c') {
+		background(255);
+	}
 }
 ```
 
