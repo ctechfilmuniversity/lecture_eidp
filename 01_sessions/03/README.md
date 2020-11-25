@@ -19,19 +19,19 @@ With this session you
 
 ## Video
 
-To be added.
+* [Video Session 03](https://e.pcloud.link/publink/show?code=XZew87ZVbUKYHqidUXKJozrV1wLRHNH88Gk)
 
 
 ## Script
 
-* [Script 05 - Variables](../../02_scripts/itc_ws2021_05_variables_script.md)
+* [Script 05 - Variables](../../../02_scripts/itc_ws2021_05_variables_script.md)
 
 ## Assignment
 
 
 ### 03.01 Variables
 
-Read the [script]((../../02_scripts/itc_ws2021_05_variables_script.md)) and make sure that you fully understand how to work with variables. Also read through the rest of the [script](../../02_scripts/itc_ws2021_05_variables_script.md) and understand operators and color systems.
+Read the [script]((../../../02_scripts/itc_ws2021_05_variables_script.md)) and make sure that you fully understand how to work with variables. Also read through the rest of the [script](../../../02_scripts/itc_ws2021_05_variables_script.md) and understand operators and color systems.
 
 Put effort into working through the steps of application example [Color Animation](https://www.openprocessing.org/sketch/1024171) (it is also in the script).
 
