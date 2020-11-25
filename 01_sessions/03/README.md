@@ -19,7 +19,8 @@ With this session you
 
 ## Video
 
-* [Video Session 03](https://e.pcloud.link/publink/show?code=XZew87ZVbUKYHqidUXKJozrV1wLRHNH88Gk)
+[Here](https://e.pcloud.link/publink/show?code=XZew87ZVbUKYHqidUXKJozrV1wLRHNH88Gk) you find the recoding of the session. The recording is only for members of this course. You are not allowed to share it.
+
 
 
 ## Script
