@@ -16,9 +16,9 @@ Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de | Film University Babelsb
     * [Loop Logic](#loop-logic)
     * [For-Loop](#for-loop)
     * [2D Loops](#2d-loops)
-    * [A Grid](#a-grid)
-    * [The 10 PRINT Example](#the-10-print-example)
-    * [Further Grid Examples](#further-grid-examples)
+        * [A Grid](#a-grid)
+        * [The 10 PRINT Example](#the-10-print-example)
+        * [Further Examples](#further-examples)
         * [The Modulo Operator](#the-modulo-operator)
     * [Summary](#summary)
 
@@ -365,7 +365,7 @@ for (let y = 0; y < numberRows; y++) {
 }
 ```
 
-## A Grid
+### A Grid
 
 Now, we can, for example, draw a rect at each x,y coordinate within the 2D loop. What do we need to change in the following example first?
 
@@ -547,7 +547,7 @@ function draw() {
 }
 ```
 
-## The 10 PRINT Example
+### The 10 PRINT Example
 
 Remember this intro? Now we know how to implement the 10 PRINT example!
 
@@ -616,7 +616,7 @@ function draw() {
 }
 ```
 
-## Further Grid Examples
+### Further Examples
 
 For a better understanding of the grid structure and also of operators, here a couple of examples.
 
