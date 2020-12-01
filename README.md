@@ -69,7 +69,7 @@ Please note that topics are subject to change during the term!
 
 ## Q&A Sessions
 
-From now on there will be every Tuesday from 14:00-15:00 a Q&A Zoom session with Phil. You don't need an appointment. Just connect anytime during that period and Phil will let you in and answer any questions that you have.
+From now on there will be every Friday from 11:00-12:00 a Q&A Zoom session with Phil. You don't need an appointment. Just connect anytime during that period and Phil will let you in and answer any questions that you have.
 
 https://zoom.us/j/2125700805?pwd=ZEEvOFRWVk1Bb2Y2dWFDT2pVYVRDQT09  
   
