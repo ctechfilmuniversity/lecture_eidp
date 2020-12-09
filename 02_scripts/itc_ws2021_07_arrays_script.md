@@ -14,7 +14,12 @@ Prof. Dr. Lena Gieseke | l.gieseke@filmuniversitaet.de | Film University Babelsb
         * [Arrays to The Rescue! 🚨](#arrays-to-the-rescue-)
     * [Array](#array)
         * [Array Access](#array-access)
-    * [Push and Pop](#push-and-pop)
+    * [Looping Over All Array Elements](#looping-over-all-array-elements)
+        * [Properties](#properties)
+        * [`for..of`](#forof)
+    * [Changing Values](#changing-values)
+        * [Push and Pop](#push-and-pop)
+        * [Splice](#splice)
     * [Example Confetti](#example-confetti)
     * [2D Arrays](#2d-arrays)
     * [Summary](#summary)
@@ -182,12 +187,24 @@ function draw() {
     rect(0, 900, widths[9], 80);
 ```
 
-We can also use a loop to access the elements in an array. For that we could use `array.length` , which gives us the number of elements in an array:
+## Looping Over All Array Elements
+
+For looping over all elements in an arrays we need to know how many element there are in the array. This can be given by a variable that we have defined or when we have an already filled array, we can use the `length` property of an array.  
+
+### Properties
+
+A property of something is accessed with the `.` notation as `object.property` (there are no parenthese). In this case we want to access the length of a array, hence the syntax is
+
+```js
+myArray.length
+```
 
 ```js
 let fruits = ["Apple", "Orange", "Plum"];
 print(fruits.length) // 3
 ```
+
+Which properties an object, e.g. an array, has, depends on the object type. An array, for example only has the property `length`. 
 
 
 ```js
@@ -207,7 +224,7 @@ function draw() {
     fill(0);
 
     for (let i = 0; i < widths.length; i++) {
-    rect(0, i * 100, widths[i], 80);
+        rect(0, i * 100, widths[i], 80);
     }
 }
 ```
@@ -232,8 +249,8 @@ function setup() {
 function draw() {}
 ```
 
-<!-- TODO: add .length explanation -->
 
+### `for..of`
 
 If we don't need the specific index of the iteration, we can also use this special `for..of` loop syntax for arrays:
 
@@ -243,19 +260,53 @@ let fruits = ["Apple", "Orange", "Plum"];
 // Special loop to iterate over array elements
 for (let f of fruits) 
 {
-    console.log( f );
+    print(f);
 }
 
 // The above is the same as
 for (let i = 0; i < fruits.length; i++) 
 {
-    console.log( fruits[i] );
+    print(fruits[i]);
 }
 ```
 
-## Push and Pop
+## Changing Values
 
-There are two special functions for working with loops, `push` and `pop`. Push appends added to the end to an array a new element, `pop` remove the last element of an array.
+The same way that you initialize an array with values with th `=` operator, you can change values inside of an array:
+
+```js
+let fruits = ["Apple", "Orange", "Plum"];
+
+// Changing a specific value inside of the array
+fruits[2] = "Strawberry";
+
+print(fruits); // ["Apple", "Orange", "Strawberry"];
+```
+
+Keep in mind that you can access a value to any index of the array you want. JavaScript will not warn you, if it is not currently assigned a value. It will automatically set all values between the accessed new index and existing values inside of the array with `undefined` element.
+
+For example:
+
+```js
+let fruits = ["Apple", "Orange", "Plum"];
+
+// Changing a value inside of the array
+// with an index that has no value yet
+fruits[10] = "Strawberry";
+
+print(fruits); // ["Apple", "Orange", "Plum", undefined, undefined, undefined, undefined, undefined, undefined, undefined, "Strawberry"]
+```
+
+A safer approach to changing values inside of an array are `push` and `pop`. Push for example makes sure that you add an element at the end of the array and that there are no `undefined` elements in between.
+
+### Push and Pop
+
+There are two special functions for working with arrays, `push` and `pop`. Push adds to the end of an array a new element, `pop` remove the last element of an array. These methods change the array itself and kind of "belong" to the array, similar to how the property `length` "belongs" to the array. Hence the functions push and pop are also directly attached to the array with the `.` notation and parenthese (because they are functions).
+
+```js
+myarray.push(element)
+myarray.pop()
+```
 
 ```js
 // https://www.openprocessing.org/sketch/1034520
@@ -264,15 +315,37 @@ let fruits = ["Apple", "Orange", "Plum"];
 
 fruits.push("Banana");
 
-print(fruits) // ["Apple", "Orange", "Plum", "Banana"];
+print(fruits); // ["Apple", "Orange", "Plum", "Banana"];
 
 fruits.pop();
 
-print(fruits) // ["Apple", "Orange", "Plum"];
+print(fruits); // ["Apple", "Orange", "Plum"];
 ```
 
+### Splice
 
-<!-- https://stackoverflow.com/questions/5767325/how-can-i-remove-a-specific-item-from-an-array -->
+If you want to, for example, remove an element at a specific index you have to use the `splice` method. The splice method adds/removes items to/from an array, and returns the removed item(s). The `splice` function also belongs to an array and is attached to it with a `.`. The syntax is
+
+```
+array.splice(index, howmany, item1, ....., itemX)
+```
+
+* `index`: Required. An integer that specifies at what position to add/remove items, Use negative values to specify the position from the end of the array
+* `howmany`: Optional. The number of items to be removed. If set to 0, no items will be removed
+* `item1, ..., itemX`: Optional. The new item(s) to be added to the array
+
+Using the function to remove an element by index looks as follows:
+
+```js
+let fruits = ["Apple", "Orange", "Plum", "Strawberry"];
+
+let indexToRemove = 2;
+
+fruits.splice(indexToRemove, 1);
+
+print(fruits); // ["Apple", "Orange", "Strawberry"]
+```
+
 
 ## Example Confetti
 
