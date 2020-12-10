@@ -18,7 +18,7 @@ With this session you
 
 ## Video
 
-<!-- [Here](https://e.pcloud.link/publink/show?code=XZew87ZVbUKYHqidUXKJozrV1wLRHNH88Gk) you find the recoding of the session. The recording is only for members of this course. You are not allowed to share it. -->
+[Here](https://e.pcloud.link/publink/show?code=XZxCW7ZcQqz0IIdLGpbffem92nGkmjLzVkk) you find the recoding of the session. The recording is only for members of this course. You are not allowed to share it.
 
 
 ## Script
