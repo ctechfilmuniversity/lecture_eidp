@@ -20,6 +20,11 @@ With this session you
 * understand the concept of image animations.
 
 
+## Video
+
+[Here](https://owncloud.gwdg.de/index.php/s/l4E7Q60IrSezuVw) you find the recoding of the first session. The recording is only for members of this course. You are not allowed to share it.
+
+
 ## Script
 
 * [Script 08 - Functions](../../02_scripts/itc_ws2021_08_functions_script.md)
@@ -176,12 +181,8 @@ if(jumping){
 
 
 
-
-
-
-
 ---
 
-Submit your sketches under `` in the OpenProcessing [class](https://www.openprocessing.org/class/64768).
+Submit your sketches under `Assignment 06 - Jumping Game Step 02` in the OpenProcessing [class](https://www.openprocessing.org/class/64768).
 
 
