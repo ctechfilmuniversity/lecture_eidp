@@ -8,7 +8,7 @@ Winter Term 20/21
 
 ---
 
-# Session 06 - Images Part 1
+# Session 06 - Functions & Images
 
 ## Learning Objectives
 
