@@ -22,7 +22,7 @@ With this session you
 
 ## Video
 
-[Here](https://owncloud.gwdg.de/index.php/s/l4E7Q60IrSezuVw) you find the recoding of the first session. The recording is only for members of this course. You are not allowed to share it.
+[Here](https://owncloud.gwdg.de/index.php/s/l4E7Q60IrSezuVw) you find the recording of the session. The recording is only for members of this course. You are not allowed to share it.
 
 
 ## Script
