@@ -40,9 +40,9 @@ With this assignment we will create an animated background for our Jumping Game.
 
 Our plan is to display this image two times next to each other. We are constantly moving it to the left until one of them left the screen completely. Then we put it back to right side of the other image to create an infinite loop.
 
-1. Create a new tab for the background code and upload the image file
+2. Create a new tab for the background code and upload the image file
 
-2. Create the background variables
+3. Create the background variables
 
 Now create the variables we need for the animated background: the image bgImg which we use for both background parts and their X positions `bg1X` and `bg2X`. We also create a variable for changing how fast the background is moving: `bgSpeed`. And because our background image is showing a ground level the player should walk on, we store the ground's height of 45px (from the bottom) in `bgGroundHeight`.
 
@@ -55,7 +55,7 @@ let bgSpeed = 1; // Speed of background animation
 let bgGroundHeight = 45; // Visible ground height
 ```
 
-1. Create and call `loadBackground()`
+4. Create and call `loadBackground()`
 
 In `loadBackground()` we load our image file. Don't forget to call this function in the `preload()` function in the main tab.
 
@@ -65,7 +65,7 @@ function loadBackground() {
 }
 ```
 
-4. Create and call `initBackground()`
+5. Create and call `initBackground()`
 
 In `initBackground()` we need to initalize only one variable: `bg2X`. When the sketch starts we want to place the second image right next to the first, thus we set its X position to the width of our background image. `initBackground()` should be called in our `setup()` function.
 
@@ -81,7 +81,7 @@ function initBackground() {
 }
 ```
 
-1. Create and call `animateBackground()`
+6. Create and call `animateBackground()`
 
 Now we create a new function called `animateBackground()`. In there we draw the background image two times at the calculated positions:
 
@@ -116,7 +116,7 @@ if (bg1X <= -bgImg.width) {
 
 We call `animateBackground()` in our `draw()` function. It's important to draw the background before drawing the player, otherwise we would just see our background image overlapping everything else.
 
-1. Move up the player to the visible ground height
+7. Move up the player to the visible ground height
 
 In the last assignment we created `initPlayer()` where we calculate the Y coordinate of our player, `playerYOnGround`. Subtract `bgGroundHeight` here to move the player up to the ground height which is shown on the image instead of displaying the player at the bottom of the sketch.
 
