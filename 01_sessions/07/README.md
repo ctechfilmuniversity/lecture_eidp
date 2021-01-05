@@ -17,6 +17,11 @@ With this session you
 * understand how to manipulate images.
 
 
+## Video
+
+[Here](https://owncloud.gwdg.de/index.php/s/QfCq672FjQpLdrs) you find the recording of the session. The recording is only for members of this course. You are not allowed to share it.
+
+
 ## Script
 
 * [Script 09 - Images](../../02_scripts/itc_ws2021_09_images_script.md)
