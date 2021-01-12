@@ -32,7 +32,7 @@ with only text, video and sound missing.
 
 Take a moment to re-capture everything we have covered so far and check wether you have any open questions? Anything you want to go over again? I will ask for any open questions in regard to whichever topic next week in class one more time.
 
-Also, assignment 08.02 Jumping Game Step 4 - Coins is a good check to which parts still might be unclear to you, as that assignment is somewhat more open, with less specific instructions.
+Also, assignment *08.02 Jumping Game Step 4 - Coins* is a good check if some coding parts might be unclear to you, as that assignment is somewhat more open, with less specific instructions.
 
 ## Assignment
 
