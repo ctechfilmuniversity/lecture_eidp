@@ -8,7 +8,7 @@ Winter Term 20/21
 
 # Session 08 - Check-In
 
-We now have worked through all syntax and language constructs that were proposed in the intro script:
+We now have worked through all syntax and language constructs [that were proposed in the intro script](https://github.com/ctechfilmuniversity/lecture_introduction_to_coding/blob/master/02_scripts/itc_ws2021_01_intro_script.md#topics):
 
 * Commands, variables
 * Events
@@ -50,11 +50,11 @@ Ultimately you should have a project plan, which summarizes the expected result 
 
 ---
 
-## Example Project Plan  
+#### Example Project Plan  
 
 The following would be a good plan. Before the actual implementation I would probably further clean and refine it. But if you are more the trial-and-error type of person, then that is fine too and the below level of detail is fine.
 
-### Filling a box with confetti
+##### Filling A Box With Confetti
 
 Upon starting the program, spheres of different sizes and colors should continually "rain" down the sketch window from the top to the bottom. Above the ground (the bottom of the sketch window) the confetti should pile up and and the space should slowly fill up with confetti.
 
@@ -96,7 +96,7 @@ Be as detailed as you can be at this point and add all questions, comments, etc.
 
 ## 08.02 Jumping Game Step 4 - Coins 
 
-In this step, we are adding coins to the game, which the player can collect. See the solution for how it should look like. You can start with your code or the solution code from Jumping Game Step 03.
+In this step, we are adding coins to the game, which the player can collect. See [the solution (last step)](https://openprocessing.org/sketch/1059260) for how it should look like. You can start with your code or [the solution code from Jumping Game Step 03](https://www.openprocessing.org/sketch/1059264).
 
 This task consists of two parts:
 
@@ -136,12 +136,12 @@ For the final placement of the coins, we want one coin to appear on the right si
 
 We are done with distributing coins in the world! ✓
 
-### Let The Player Be Able To Collect Coins
+### Let The Player Collect Coins
 
 For now, we simply want a coin to disappear ("being collected") when the player collides with it. We will add counting points later.
 
 * For tracking whether a coin is collected or not, add in the coin tab a global variable for that, e.g. `coinCollected` and set it to `false`.
-* Think about it for a moment how you could detect a collision between the player and the coin. Feel free to use your own solution for that. One possibility is to set a collision to `true`, if the distance between the player and the coin positions is equal or less than both of their "radiuses" (half their size). You can implement this with the following code and the given [dist function](https://p5js.org/reference/#/p5/dist):
+* Think about it for a moment how you could detect a collision between the player and the coin. Feel free to use your own solution for that. One possibility is to set a collision to `true`, if the distance between the player and the coin positions is equal or less than both of their "radii" (half their size). You can implement this with the following code and the given [dist function](https://p5js.org/reference/#/p5/dist):
 
 ```js
     if (dist(coinX, coinY, playerX, playerY) <= playerSize/2 + coinSize/2) {
