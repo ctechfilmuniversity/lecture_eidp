@@ -107,7 +107,7 @@ The instructions below are intentionally left much more open than so far. This i
 
 ### Distribute Coins In The World
 
-The background is animated to move from the right side of the screen to the left, which make the player appear to be running to the right. We want the coins to be placed in the world, hence we also need them to appear at the right side of the screen, animated to move from the right to the left.
+We are actually only working with *one* coin, which is moved and by that disappears and reappears. The background is animated to move from the right side of the screen to the left, which make the player appear to be running to the right. We want the coins to be placed in the world, hence we also need them to appear at the right side of the screen, animated to move from the right to the left.
 
 1. Download the provided coin images or find your own images.
 
