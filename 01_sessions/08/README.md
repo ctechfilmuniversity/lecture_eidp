@@ -40,7 +40,9 @@ This assignment is due January 19th.
 
 ### 08.01 Final Project - Plan
 
-It is time to think about a final project! This project can be anything you like. It doesn't need to be useful but it can also just be pretty, fun and/or completely useless ([one of my favorite websites of all time](http://make-everything-ok.com/), or [why you should make useless things](https://www.ted.com/talks/simone_giertz_why_you_should_make_useless_things)). But of course you can also code something practical that you can actual use... 🙂
+It is time to think about a final project! This project can be anything you like. To hand in a final project is not mandatory. However, I recommend to come up with project ideas in this exercise no matter what, even if you later don’t do them. It is good practice. 
+
+The project doesn't need to be useful but it can also just be pretty, fun and/or completely useless ([one of my favorite websites of all time](http://make-everything-ok.com/), or [why you should make useless things](https://www.ted.com/talks/simone_giertz_why_you_should_make_useless_things)). But of course you can also code something practical that you can actual use... 🙂
 
 The  workload of the final project depends on the number of LPs you want to achieve. Please indicate on your submitted project plan how many LPs you are planning on. 1 LP amounts to ~30h of work. As you will encounter many unexpected problems along the way, you should double your planned time automatically. This means if you think you can complete your project in 5 workdays, which are 40h in total, you should directly plan with 80h in total.
 
