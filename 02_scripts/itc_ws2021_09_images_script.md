@@ -10,22 +10,24 @@ Winter Term 20/21
 
 # Script 09 - Images
 
-- [Script 09 - Images](#script-09---images)
-  - [Learning Objectives](#learning-objectives)
-  - [Images](#images)
-    - [Loading And Displaying Images](#loading-and-displaying-images)
-    - [Image Animations](#image-animations)
-    - [Modifying the Size](#modifying-the-size)
-    - [Modifying the Image Data](#modifying-the-image-data)
-    - [Reading Pixel Data](#reading-pixel-data)
-    - [Setting Pixel Data](#setting-pixel-data)
-    - [Example - Pointillism](#example---pointillism)
-    - [Example - Brownian Motion Lines](#example---brownian-motion-lines)
-    - [Example - Stretching](#example---stretching)
-    - [Example - Tiling](#example---tiling)
-  - [Summary](#summary)
+* [Script 09 - Images](#script-09---images)
+    * [Learning Objectives](#learning-objectives)
+    * [Images](#images)
+        * [Loading And Displaying Images](#loading-and-displaying-images)
+        * [Image Animations](#image-animations)
+        * [Modifying the Size](#modifying-the-size)
+        * [Modifying the Image Data](#modifying-the-image-data)
+        * [Reading Pixel Data](#reading-pixel-data)
+        * [Setting Pixel Data](#setting-pixel-data)
+        * [Example - Pointillism](#example---pointillism)
+        * [Example - Brownian Motion Lines](#example---brownian-motion-lines)
+        * [Example - Stretching](#example---stretching)
+        * [Example - Tiling](#example---tiling)
+    * [Summary](#summary)
 
 ---
+
+<!-- TODO: Fill in the code from the tutorials and the missing content from last year's script, better images for brownian noise. -->
 
 
 ## Learning Objectives
@@ -193,4 +195,4 @@ Use the [reference](https://p5js.org/reference/) 🚒
 
 The End
 
-🏇 📷 🖼️
+🏇 📷  🖼️
