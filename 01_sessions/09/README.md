@@ -6,6 +6,10 @@ Winter Term 20/21
 
 ---
 
+The [video](https://e.pcloud.link/publink/show?code=XZn6i7ZxSHwOkl03XH5SQ1dPtrBGk4QUNGy) of today's session.
+
+---
+
 # Session 09 - Jumping Game Step 08 - Game States
 
 Go over the [solution from the class](https://www.openprocessing.org/sketch/1066944), which adds an enemy and adds sound and understand it well. Add these aspects also to your solution or start with the [given solution](https://www.openprocessing.org/sketch/1066944).
