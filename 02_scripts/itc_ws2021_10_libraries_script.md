@@ -6,9 +6,9 @@ Winter Term 20/21
 
 ---
 
-# Script 10 - Sound
+# Script 10 - Libraries
 
-* [Script 10 - Sound](#script-10---sound)
+* [Script 10 - Libraries](#script-10---libraries)
     * [Learning Objectives](#learning-objectives)
     * [Libraries](#libraries)
         * [Examples](#examples)
