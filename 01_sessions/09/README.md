@@ -8,7 +8,7 @@ Winter Term 20/21
 
 # Session 09 - Jumping Game Step 08 - Game States
 
-Go over the solution from the class, which adds an enemy, stops the flying and adds sound and understand it well. Add these aspects also to your solution or start with the [given solution](https://www.openprocessing.org/sketch/1066944).
+Go over the [solution from the class](https://www.openprocessing.org/sketch/1066944), which adds an enemy and adds sound and understand it well. Add these aspects also to your solution or start with the [given solution](https://www.openprocessing.org/sketch/1066944).
 
 ## Assignment
 
@@ -31,6 +31,15 @@ Create some logic that sets the game to a *game over* state at some point. Wheth
 Once again, I am happy to help, if you get stuck. Get in touch: l.gieseke@filmniversitaet.de
 
 ---
+
+### 09.03 - Optional Task
+
+If you are feeling adventourous, you can try to
+
+* stop the flying of the player by limiting the number of possible jumps in a row
+* use arrays to have more than one enemy, or
+* adjust the game any way you like!
+
 
 Submit your sketches under `Assignment 09 - Jumping Game Step 08` in the OpenProcessing [class](https://www.openprocessing.org/class/64768).
 
