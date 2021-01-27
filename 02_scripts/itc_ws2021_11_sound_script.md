@@ -9,7 +9,6 @@ Winter Term 20/21
 # Script 11 - Sound
 
 * [Script 11 - Sound](#script-11---sound)
-    * [Teaser](#teaser)
     * [Learning Objectives](#learning-objectives)
     * [Sound](#sound)
         * [Loading And Playing A Sound File](#loading-and-playing-a-sound-file)
@@ -18,11 +17,6 @@ Winter Term 20/21
     * [Summary](#summary)
 
 ---
-
-## Teaser
-
-
-
 
 ## Learning Objectives
 
